@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Class Activity 6</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="Ozkan_Keskin.php" method="POST">
+        <table >
+            <tr>
+                <td class="col1">Name:</td>
+                <td><input type="text" name="name" autofocus  placeholder="Please enter the username"> </td>
+                
+            </tr>
+            <tr>
+                <td class="col1">Username:</td>
+                <td><input type="text" name="uname" placeholder="Please enter the username"> </td>
+                
+            </tr>
+            <tr>
+                <td class="col1">Password:</td>
+                <td><input type="password" name="pass" /> </td>
+            </tr>
+            <tr>
+                <td class="col1">Address:</td>
+                <td><input type="text" name="address" /> </td>
+            </tr>
+            <tr>
+                <td class="col1">Country:</td>
+                <td>
+                    <select name="country">
+                        <option value="USA">USA</option>
+                        <option value="Canada">CANADA</option>
+                        <option value="UK"> UK </option>
+                        <option value="Russia">RUSSIA</option>
+                        <option value="Germany">GERMANY</option>
+                        <option value="Turkiye" selected>Turkiye</option>
+                    </select><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">ZIP Code:</td>
+                <td><input type="text" name="zip" size="5"> </td>
+                
+            </tr>
+            <tr>
+                <td class="col1">Email:</td>
+                <td><input type="text" name="email" /> </td>
+            </tr>
+        </table> 
+        <table> 
+            <tr>
+                <td class="col1">Sex:</td> 
+                <td><input type="radio" name="sex" value="male"></td>
+                <td>Male</td>
+                <td><input type="radio" name="sex" value="female"></td>
+                <td>Female</td>
+            </tr>
+        </table> 
+        <table> 
+            <tr> 
+                <td class="col1">Language:</td>
+                <td><input type="checkbox" name="language[]" value="English" ></td>
+                <td>English</td>
+                <td><input type="checkbox" name="language[]" value="French" ></td>
+                <td>French</td>
+                <td><input type="checkbox" name="language[]" value="Germany" ></td>                
+                <td>Germany</td>
+            </tr>
+        </table> 
+        <table> 
+            <tr>
+                <td class="col1">About:</td>
+                <td><textarea rows="4" cols="30" name="comment" maxlength="250" minlength="20" ></textarea></td>
+            </tr>
+        </table>        
+        <p class="btn"><input type="submit" value="Submit"/></p>
+    </form>    
+</body>
+</html>

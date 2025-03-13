@@ -1,0 +1,23 @@
+body{
+    padding: 5%;
+    width: 50%;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="checkbox"]
+{
+    width: 100%;
+    margin: 5px 0;
+    padding: 3px 10px;
+}
+
+input[type="radio"]{
+    margin: 10px 3px;
+}
+.btn{
+    padding-left: 150px;
+}
+.col1{
+    width: 100px;
+}
