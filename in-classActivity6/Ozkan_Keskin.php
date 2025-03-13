@@ -12,7 +12,7 @@
             $background =$_POST['theme'];
          }
     ?>
-    <body style="font-style:italic; background-color:<?php echo $background; ?>;">
+    <body>
         <h1>Preview</h1>
         <p>
             <?php
@@ -43,7 +43,7 @@
                 if(empty($_POST['pass'])==false)
                 {
                     if(strlen($_POST['pass'])>=8)
-                        echo "Your password is stored";
+                        echo $_POST['pass'];
                     else
                         echo "Your password must be longer than 8 characters.";
                     
@@ -72,9 +72,9 @@
                
                 if(empty($_POST['country'])==false)
                 {
-                    $dashPosition = strpos($_POST['country'],"-")+1;
-                    $cityName = substr($_POST['country'],$dashPosition);
-                    echo "$country";
+                    $dashPosition = strpos($_POST['country'],"-");
+                    $countryName = substr($_POST['country'],$dashPosition);
+                    echo $countryName;
   
                 }
                 else 
@@ -109,7 +109,7 @@
                         $istThereDot = str_contains($afterA,".");
                         if($istThereDot)
                         {
-                            echo "Your email is recorded";
+                            echo $_POST['email'];
                         }
                         else
                         {
@@ -153,7 +153,7 @@
                {
                    for($i=0;$i<sizeof($_POST['language']);$i++)
                    {
-                        echo $_POST['language'][$i].", ";
+                        echo $_POST['language'][$i]."<br>";
                    } 
                    echo "<br>";
                }
@@ -167,7 +167,6 @@
             <?php
                 if(empty($_POST['comment'])==false)
                 {
-                     echo "Thanks for your comment <br/>";
                      echo $_POST['comment'];
                 }else{
                     echo "About: Not provided";
