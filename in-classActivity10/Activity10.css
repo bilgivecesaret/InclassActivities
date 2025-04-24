@@ -1,0 +1,23 @@
+input:required:invalid {
+    /* insert your own styles for invalid form input */
+    outline: 1px solid red;
+    border: none;
+    border-radius: 2px;
+}
+
+input:required:valid {
+    /* insert your own styles for invalid form input */
+    outline: 1px solid greenyellow;
+    border: none;
+    border-radius: 2px;
+}
+
+/* Resetting default form styles */
+form {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  
+  
